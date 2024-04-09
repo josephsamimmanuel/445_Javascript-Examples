@@ -1,0 +1,25 @@
+<!-- //***********************************************************************************************************************
+
+// <<============== 64. HTML SLIDER RANGE  ==================>> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="range" id="range" oninput="rangeSlide()">
+    <input type="text" id="result">
+    <script>
+        var range=document.getElementById("range")
+        var result=document.getElementById("result")
+        function rangeSlide(){
+            result.value=range.value
+        }
+    </script>
+</body>
+</html>
+
+<!-- //***********************************************************************************************************************

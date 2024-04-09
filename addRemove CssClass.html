@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .content{
+        text-align: center;
+        color: green;
+    }
+</style>
+<body>
+    <div id="target" onclick="bclicked()">Hi there how are u?</div>
+    <script>
+        var target=document.getElementById("target")
+        // target.classList.add("content")
+        // target.classList.remove("content")
+        function bclicked(){
+            target.classList.toggle("content")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!-- // <<============== 13. GET INPUT TEXT VALUES WHILE TYPING IN REAL TIME ==================>> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Vasline <input type="text" id="vasline" oninput="typingRealTime()"> <br>
+    Animal <input type="text" id="animal" oninput="typRealTime()"> <br>
+    Dominos <input type="text" id="dominos">
+
+    <script>
+        var vasline=document.getElementById("vasline")
+        var dominos=document.getElementById("dominos")
+        var animal=document.getElementById("animal")
+        function typingRealTime(){
+            dominos.value=vasline.value
+        }
+        function typRealTime(){
+            dominos.value=animal.value
+        }
+    </script>
+</body>
+</html>

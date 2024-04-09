@@ -1,0 +1,40 @@
+<!-- //***********************************************************************************************************************
+
+// <<============== 54. ADDING DROP-DOWN LIST(HTML SELECT)  ==================>> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const options=[
+            {
+                text:"Choose One",
+                value:""
+            },
+            {
+                text:"India",
+                value:"91"
+            },
+            {
+                text:"Turkey",
+                value:"90"
+            },
+            {
+                text:"Pakistan",
+                value:"1"
+            },
+        ];
+        const select=document.createElement("select")       // tag
+        options.forEach((items)=>{                          // all objects
+            let option =new Option(items.text,items.value)
+            select.appendChild(option)                      // properties inside select box
+        })
+            document.body.appendChild(select)               // append to body
+    </script>
+</body>
+</html>

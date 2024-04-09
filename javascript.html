@@ -1,0 +1,17 @@
+<!-- <<============== 9. CHANGING HTML INPUT TEXT VALUE BASED ON HTML SELECT BOX SELECTION - ONCHANGE ==================>> -->
+
+<select id="countries" onchange="showCapital()">
+    <option value="">Choose One</option>
+    <option value="Delhi">India</option>
+    <option value="New York">America</option>
+    <option value="Sydney">Australia</option>
+</select>
+<input type="text" id="capital">
+
+<script>
+    function showCapital(){
+        var countries=document.getElementById("countries")
+        var capital=document.getElementById("capital")
+        capital.value=countries.value
+    }
+</script>

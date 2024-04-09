@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="input" oninput="inputType()">
+    <span id="result">Result</span>
+    <script>
+        var result = document.getElementById("result")
+        var input = document.getElementById("input")
+        function inputType() {
+            result.textContent = input.value
+        }
+
+        let _ = location.href
+        _=location.origin
+        _=location.protocol
+        _=location.host
+        _=location.hostname
+        _=location.pathname
+        _=location.port
+        _=location.hash
+        _=location.search
+        console.log(_)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!-- // <<============== 19. WHY WE USE CLOSURE? ==================>> -->
+
+<button id="btn1">Button1</button>
+<button id="btn2">Botton2</button>
+
+<script>
+    let add1=(function(){
+        let counter=0
+        return function(){
+            counter++
+        this.textContent=counter
+        }
+    })()
+    btn1.onclick=add1
+
+    
+    let sub1=(function(){
+        let counter=0
+        return function(){
+            counter--
+        this.textContent=counter
+        }
+    })()
+    btn2.onclick=sub1
+</script>

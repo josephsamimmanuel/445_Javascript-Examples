@@ -1,0 +1,16 @@
+ <!-- <<============== 10. JAVASCRIPT ALERT, PROMPT AND TEMPLATE LITERALS ==================>> -->
+<script>
+let age = prompt("Your Age is?");
+
+    if (age === "" || isNaN(age)) {
+        alert("AGE MUST BE A NUMBER");
+    } 
+    else {
+        alert(`You are ${age} years old`);
+    }
+
+//**************************************************** OR *******************************************************************
+{
+    alert((age==="" || isNaN(age))?("Enter a valid Number"):(`You are ${age} years old`))
+}
+</script>

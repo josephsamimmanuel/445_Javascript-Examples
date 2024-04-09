@@ -1,0 +1,28 @@
+<!-- //***********************************************************************************************************************
+
+// <<============== 69. CHANGE BACKGROUND COLORS USING RADIO BUTTON  ==================>> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="r" value="purple" id="radio1">
+    <input type="radio" name="r" value="orange" id="radio2">
+    <script>
+        let radio1=document.getElementById("radio1")
+        let radio2=document.getElementById("radio2")
+        const buttons=document.getElementsByName("r")
+        for(const button of buttons){
+            button.onclick=changeBg
+            function changeBg(){
+                document.body.style.backgroundColor=this.value
+            }
+            }
+        
+    </script>
+</body>
+</html>
